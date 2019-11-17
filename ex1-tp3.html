@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Exercicio 1 - Lista 3</title>
+</head>
+<body>
+    <nav id="menu">
+        <ul>
+            <li><a href="../index.html">Pagina Inicial</a></li>
+            <li><a href="tp1.html">TP1</a></li>
+            <li><a href="../TP_2/tp2.html">TP2</a></li>
+            <li><a href="../TP_3/tp3.html">TP3</a></li>
+        </ul>
+    </nav>
+
+    <script type="text/javascript">
+        var vet = [8];
+        var pos = [8];
+        var neg = [8];
+
+        for(var i = 0; i < 8; i++){
+            vet[i] = parseInt(prompt("Digite um numero:"));
+        }
+    
+        for (var i = 0; i < 8; i++){
+            if(vet[i] < 0){
+                neg[i] = vet[i];
+            }
+            else if (vet[i] > 0){
+                pos[i] = vet[i]
+            }
+        }
+
+        pos.sort();
+        neg.sort();
+
+        for (var i = 0; i < 8; i++){
+            document.write("Vetor Negativo posição " + i + ": " + neg[i] + ", " + "<br>");
+        }
+
+        Document.write("<br><br><br>");
+
+        for (var i = 0; i < 8; i++){
+            document.write("Vetor Positivo posição " + i + ": " + pos[i] + ", " + "<br>");
+        }
+    </script>
+</body>
+</html>

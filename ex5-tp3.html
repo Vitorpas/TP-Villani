@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Exercicio 4 - Lista 3</title>
+</head>
+<body>
+    <nav id="menu">
+        <ul>
+            <li><a href="../index.html">Pagina Inicial</a></li>
+            <li><a href="tp1.html">TP1</a></li>
+            <li><a href="../TP_2/tp2.html">TP2</a></li>
+            <li><a href="../TP_3/tp3.html">TP3</a></li>
+        </ul>
+    </nav>
+
+    <script type="text/javascript">
+        var vet = [100];
+        var n = 0;
+        var c = 0;
+        var t = 0;
+        var a = 0;
+
+        do {
+            vet[a] = parseInt(prompt("Digite um número"));
+            if (vet[a] == 0) {
+                t = 1;
+            }
+            else {
+                n = vet[a];
+                a++;
+            }
+        } while (t == 0);
+
+        for (var i = 0; i < a; i++) {
+            if (vet[i] == n) {
+                c++;
+            }
+        }
+
+        Document.write("Números iguais ao ultimo digitado (" + n + ") : " + (c-1));
+    </script>
+</body>
+</html>
+        

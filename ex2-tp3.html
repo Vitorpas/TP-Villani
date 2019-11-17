@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Exercicio 2 - Lista 3</title>
+</head>
+<body>
+    <nav id="menu">
+        <ul>
+            <li><a href="../index.html">Pagina Inicial</a></li>
+            <li><a href="tp1.html">TP1</a></li>
+            <li><a href="../TP_2/tp2.html">TP2</a></li>
+            <li><a href="../TP_3/tp3.html">TP3</a></li>
+        </ul>
+    </nav>
+
+    <script type="text/javascript">
+        var vet = [8];
+        var c;
+
+        for (var i = 0; i < 8; i++) {
+            vet[i] = parseInt(prompt("Digite um número"));
+        }
+
+        for (var i = 0; i < 8; i++) {
+            if (vet[i] > 50) {
+                Document.write("Número acima de 50: " + vet[i]);
+                Document.write("Posição: " + (i+1));
+            }
+            else {
+                c++;
+            }
+
+            if (c == 8) {
+                Docmuent.write("Não há números com valor acima de 50");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Exercicio 3 - Lista 3</title>
+</head>
+<body>
+    <nav id="menu">
+        <ul>
+            <li><a href="../index.html">Pagina Inicial</a></li>
+            <li><a href="tp1.html">TP1</a></li>
+            <li><a href="../TP_2/tp2.html">TP2</a></li>
+            <li><a href="../TP_3/tp3.html">TP3</a></li>
+        </ul>
+    </nav>
+
+    <script type="text/javascript">
+        var vet = [10];
+
+        for (var i = 0; i < 10; i++) {
+            vet[i] = parseInt(prompt("Digite um número"));
+
+            if (vet[i] % 2 == 0) {
+                vet[i] = vet[i] + 5;
+            }
+            else {
+                vet[i] = vet[i] * 5;
+            }
+        }
+
+        for (var i = 0; i < 10; i++) {
+            Document.write("Novo número do vetor " + i + ": " + vet[i]);
+        }
+    </script>
+</body>
+</html>

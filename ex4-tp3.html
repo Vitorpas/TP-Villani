@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Exercicio 4 - Lista 3</title>
+</head>
+<body>
+    <nav id="menu">
+        <ul>
+            <li><a href="../index.html">Pagina Inicial</a></li>
+            <li><a href="tp1.html">TP1</a></li>
+            <li><a href="../TP_2/tp2.html">TP2</a></li>
+            <li><a href="../TP_3/tp3.html">TP3</a></li>
+        </ul>
+    </nav>
+
+    <script type="text/javascript">
+        var vet = [20];
+        var t;
+
+        for (var i = 0; i < 20; i++) {
+            vet[i] = parseInt(prompt("Digite um número"));
+        }
+
+        for (var i = 20; i > 0; i--) {
+            for (var j = 0; j < vet.length; j++) {
+                if (vet[j] >= vet[j+1]) {
+					t = vet[j];
+					vet[j] = vet[j+1];
+					vet[j+1] = t;
+                }
+            }
+        }   
+
+        Document.write("Lista em ordem decrescente");
+        for (var i = 0; i < 20; i++) {
+            document.write(vet[i]);
+        }
+    </script>
+</body>
+</html>
+        
